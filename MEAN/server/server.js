@@ -16,7 +16,7 @@ var app = express();
 // swagger definition
 var swaggerDefinition = {
   info: {
-    title: 'Sigfig RPT Swagger API',
+    title: 'RPT Swagger API',
     version: '1.0.0',
     description: 'Rest APIs for the front end programming test',
   },
