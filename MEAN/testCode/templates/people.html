@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+    <div class="panel panel-default company people-panel">
+        <div class="panel-heading people-heading">people at {{details.name}}</div>
+        <div class="panel-body">
+            <ul>
+                <li ng-repeat="person in people" class="cursor">
+                    <span ng-click="gotoPerson(person)">{{person.name}}</span>  
+                    <input type="button" value="delete" ng-click="delPerson(person)">
+                </li>
+            </ul>
+        </div>
+        <div class="panel-footer sigColor cursor" ng-click="backtoCompanyEdit()">Back to {{details.name}}</div>
+    </div>
+</div>
+

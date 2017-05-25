@@ -1,0 +1,16 @@
+<div class="panel panel-default">
+    <div class="panel-heading">Companies</div>
+    <div class="panel panel-default company" ng-repeat="obj in list" >
+        <div class="panel-heading sigColor">{{obj.name}}  <span ng-click="go(obj)" class="cursor">edit</span></div>
+        <div class="panel-body">
+            <p><strong>Address:</strong></p>
+            <p>{{obj.address}}</p>
+            <p><strong>Revenue:</strong></p>
+            <p>{{obj.revenue}}</p>
+            <p><strong>Phone:</strong></p>
+            <p>{{obj.phone}}</p>
+
+        </div>
+        <div class="panel-footer sigColor cursor" ng-click="peopleGo(obj)">People who work here</div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="panel panel-default">
+    <div class="panel panel-default company edit-panel">
+        <div class="panel-heading sigColor">{{details.name}}</div>
+        <div class="panel-body">
+            <p><strong>Address:</strong></p>
+            <input type="text" ng-model="details.address">
+            <p><strong>Revenue:</strong></p>
+            <input type="text" ng-model="details.revenue">
+            <p><strong>Phone:</strong></p>
+            <input type="text" ng-model="details.phone">
+            <input type="button" value="save" ng-click="save()">
+            <input type="button" value="back" ng-click="back()">
+        </div>
+        <div class="panel-footer sigColor cursor" ng-click="peopleGo(obj)">People who work here</div>
+    </div>
+</div>

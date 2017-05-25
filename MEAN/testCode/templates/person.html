@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+    <div class="panel panel-default company people-panel">
+        <div class="panel-heading people-heading">person detail</div>
+        <div class="panel-body create-panel">
+            <p><strong>Name:</strong></p>
+            <input type="text" ng-model="person.name">
+            <p><strong>Email:</strong></p>
+            <input type="text" ng-model="person.email">
+            <p><strong>Company:</strong></p>
+
+            <select ng-model="companySelectedInPerson" ng-options="companyInPerson.name for companyInPerson in listInPerson">
+            </select>
+
+            <input type="button" value="save" ng-click="personSave()">
+            <input type="button" value="back" ng-click="personBack()">
+        </div>
+        <div class="panel-footer sigColor cursor" ng-click="backtoCompanyEdit()">Back to {{details.name}}</div>
+    </div>
+</div>
+
