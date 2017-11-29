@@ -18,4 +18,3 @@ npm install
 npm run start
 ```
 * navigate to http://localhost:3001/testCode/index.html
-* do you work within the testCode directory
